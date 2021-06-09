@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+ 
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login form</title>
+<link rel="icon" href="img\pizza-logo.jpg">
+ 
+<style>
+
+body{
+    margin: 0px;
+    padding: 0px;
+    text-align:center;
+    width: 100%;
+    background-image: url("https://i.pinimg.com/736x/d9/3c/01/d93c01ca57fd398f87d68043eb2139c4.jpg");
+    background-repeat: no-repeat ;
+    background-size: 100%;
+    background-attachment: fixed;
+    }
+     
+    input[type=text], input[type=password]{
+    width:20%;
+    padding:7px 10px;
+    margin: 10px 0;
+    display:inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    }
+     
+    button{
+    background-color:#4CAF50;
+    width: 10%;
+    padding: 9px 5px;
+    margin:10px 0px 0px 35px;
+    cursor:pointer;
+    border:none;
+    color:#ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    }
+     
+    button:hover{
+    opacity:0.8;
+    }
+     
+    #un,#ps{
+    font-family:'Lato', sans-serif;
+    color: bold black;
+    }
+ 
+ 
+    #container{
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width:600;
+        height: 300px;
+        text-align: center;
+    }
+
+    .a{
+            text-align: center;
+            padding-top: 35%;
+            margin-left: 45%;
+            margin-right: 40%;
+            font-size: 20px solid ;
+            display: inline-block;
+            color: white;
+        }
+
+</style>
+ 
+</head>
+ 
+<body>
+ 
+<div id="container">
+<form action="login" method="post" id="flogin">
+ 
+<div>
+<h2>Login Form</h2>
+<label for="uname" id="un">Username:</label>
+<input type="text" name="user" placeholder="Enter Username" id="uname" required autocomplete="off"><br/>
+ 
+<label for="upass" id="ps">Password:</label>
+<input type="password" name="pass" placeholder="Enter Password" id="upass" required autocomplete="off" minlength="5"><br/>
+ 
+<button type="submit" value="Login"  id="submit" onClick="alert('Login Successfully')">Let me in.</button>
+ 
+<a href="register.html">New Member</a>
+</div>
+ 
+</form>
+</div>
+
+    <footer>
+    <a class="a" href="index.html">Back to Home</a>
+   </footer>
+ 
+</body>
+</html>

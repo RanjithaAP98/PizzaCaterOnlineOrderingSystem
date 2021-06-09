@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" href="img\pizza-logo.jpg">
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      * {
+        box-sizing: border-box;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      header img {
+        width: 100px;
+        height: 100px;
+        flex-shrink: 0;
+      }
+
+      .header-img {
+        width: 60px;
+        height: 60px;
+        flex-shrink: 0;
+        padding: 5px;
+        margin-right: 50%;
+      }
+
+      header h1 {
+        margin: 0;
+        color: black;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 15px;
+        
+      }
+      
+      
+      input[type=text], input[type=email], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      
+      input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+      
+      
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 10px;
+      }
+      
+      
+      .column {
+        float: left;
+        width: 50%;
+        margin-top: 6px;
+        padding: 20px;
+      }
+      
+      
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      
+      @media screen and (max-width: 600px) {
+        .column, input[type=submit] {
+          width: 100%;
+          margin-top: 0;
+        }
+      }
+
+      
+      </style>
+      </head>
+      <body>
+
+        <header class="header">
+
+          <img src="https://image.freepik.com/free-vector/pizza-logo-vector_25327-119.jpg" />
+
+        <h1>Contact Us</h1>
+
+          <a href="index.html" target="_blank">
+            <img class="header-img" src="https://www.flaticon.com/svg/static/icons/svg/25/25694.svg"/></a>
+    
+      </header>
+      
+      
+      
+      <div class="container">
+        <div style="text-align:center">
+          <h2>Send Us A Message</h2>
+          <p>Swing by for a slices of pizza, or leave us a message:</p>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <img src="https://www.w3schools.com/w3images/map.jpg" style="width:100%">
+          </div>
+
+          <div class="column">
+
+            <form action="/action_page.php">
+
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="off" placeholder="Your name..">
+
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="off" placeholder="Your email..">
+
+              <label for="country">City</label>
+              <select id="country" name="country">
+                <option>Select</option>
+                <option>Bangaluru</option>
+                <option>Belagavi</option>
+                <option>Chikkamagaluru</option>
+                <option>Davanagere</option>
+                <option>Hassan</option>
+                <option>Kodagu</option>
+                <option>Mysore</option>
+                <option>Mandya</option>
+                <option>Shivamogga</option>
+                <option>Tumkur</option>
+                <option>Other</option>
+              </select>
+
+              <label for="subject">Type your message..</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:50px"></textarea>
+
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+      
+      </body>
+      </html>
+      
